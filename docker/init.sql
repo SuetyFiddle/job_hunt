@@ -19,22 +19,24 @@ CREATE TABLE responsibilities (
 
 CREATE TABLE education (
     id SERIAL PRIMARY KEY,
-    institution VARCHAR(100),
-    degree VARCHAR(100),
+    institution VARCHAR(50),
+    degree VARCHAR(50),
+    result VARCHAR(50),
     start_date DATE,
-    end_date DATE
+    end_date DATE,
+    description TEXT
 );
 
 CREATE TABLE languages (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(100),
-    level VARCHAR(50)
+    name VARCHAR(12),
+    level VARCHAR(12)
 );
 
 CREATE TABLE tools (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(100),
-    level VARCHAR(50)
+    name VARCHAR(50),
+    level VARCHAR(12)
 );
 
 /*---------------------
@@ -103,9 +105,9 @@ VALUES
 Set up other data
 ----------------------*/
 
-INSERT INTO education (institution, degree, start_date, end_date)
+INSERT INTO education (institution, degree, result, start_date, end_date, description)
 VALUES
-('University of Reading', 'Cybernetics', '2011-09-11', '2015-07-01');
+('University of Reading', 'Cybernetics', 'First', '2011-09-11', '2015-07-01', 'Interdisciplinary degree with modules including: Virtual Reality, Neural Nets, Control Systems, Machine Intelligence, Bionics, Materials Science, Image Analysis, Kinematics, Swarm Intelligence, etc.');
 
 INSERT INTO languages (name, level)
 VALUES
@@ -113,22 +115,22 @@ VALUES
 ('Python', 'Core'),
 ('C++', 'Core'),
 ('Scala', 'Core'),
-('JavaScript', 'Additional'),
-('HTML/CSS', 'Additional'),
-('SQL', 'Additional'),
-('Bash', 'Additional');
+('JavaScript', 'Ancilliary'),
+('HTML/CSS', 'Ancilliary'),
+('SQL', 'Ancilliary'),
+('Bash', 'Ancilliary');
 
 INSERT INTO tools (name, level)
 VALUES
 ('Git', 'Core'),
 ('Docker', 'Core'),
 ('RabbitMQ', 'Core'),
-('AWS', 'Additional'),
-('Jenkins', 'Additional'),
+('AWS', 'Ancilliary'),
+('Jenkins', 'Ancilliary'),
 ('Linux', 'Core'),
 ('PostGreSQL', 'Core'),
-('Redis', 'Additional'),
-('Laravel', 'Additional'),
-('SpringBoot', 'Additional'),
-('Grafana', 'Additional'),
-('Prometheus', 'Additional');
+('Redis', 'Ancilliary'),
+('Laravel', 'Ancilliary'),
+('SpringBoot', 'Ancilliary'),
+('Grafana', 'Ancilliary'),
+('Prometheus', 'Ancilliary');
