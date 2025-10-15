@@ -115,7 +115,7 @@ VALUES
 ('Python', 'Core'),
 ('C++', 'Core'),
 ('Scala', 'Core'),
-('JavaScript', 'Ancilliary'),
+('TypeScript', 'Ancilliary'),
 ('HTML/CSS', 'Ancilliary'),
 ('SQL', 'Ancilliary'),
 ('Bash', 'Ancilliary');
