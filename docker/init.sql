@@ -107,7 +107,7 @@ Set up other data
 
 INSERT INTO education (institution, degree, result, start_date, end_date, description)
 VALUES
-('University of Reading', 'Cybernetics', 'First', '2011-09-11', '2015-07-01', 'Interdisciplinary degree with modules including: Virtual Reality, Neural Nets, Control Systems, Machine Intelligence, Bionics, Materials Science, Image Analysis, Kinematics, Swarm Intelligence, etc.');
+('University of Reading', 'BSc Cybernetics', 'First', '2011-09-11', '2015-07-01', 'Interdisciplinary degree with modules including: Virtual Reality, Neural Nets, Control Systems, Machine Intelligence, Bionics, Materials Science, Image Analysis, Kinematics, Swarm Intelligence, etc.');
 
 INSERT INTO languages (name, level)
 VALUES
