@@ -1,23 +1,20 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import ExperienceList from '@/components/ExperienceList.vue'
+import EducationList from '@/components/EducationList.vue'
+import LanguageList from '@/components/LanguageList.vue'
+import ToolList from '@/components/ToolList.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div>
+    <ExperienceList />
+    <EducationList />
+    <LanguageList />
+    <ToolList />
+  </div>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 header {
   line-height: 1.5;
 }
@@ -44,4 +41,4 @@ header {
     flex-wrap: wrap;
   }
 }
-</style>
+</style> -->
